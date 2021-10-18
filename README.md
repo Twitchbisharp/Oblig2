@@ -1,5 +1,5 @@
 # Oblig2
-The second oblig in a series of 3
+View the web-page here: https://twitchbisharp.github.io/Oblig2/
 
 
 
