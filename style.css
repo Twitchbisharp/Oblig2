@@ -1,0 +1,721 @@
+@media screen and (max-width: 600px) /*For alle skjermer under 600px*/
+{ 
+    /*Importerer Montserrat font fra mappen assets*/
+    @font-face {
+        font-family: Montserrat;
+        src: url(assets/fonts/Montserrat-Bold.ttf);
+    }
+    @font-face {
+        font-family: Lato;
+        src: url(assets/fonts/Lato-Regular.ttf);
+    }
+
+    h1,h2,h3{
+        font-family: Montserrat, sans-serif;
+    }
+    p,li{
+        /*Default font size 14px*/
+        font-size: 14px;
+        max-width: 70ch;
+        /*The paragraph will never exceed 70ch wide and the distance 
+        between lines of text will be set to 1.5*/
+        line-height: 1.5;
+    }
+    
+    main {    
+        /*Default content size*/
+        font-size: 1.2rem;
+        /*The box shadow’s color is “darkgrey”*/
+        /*It sets a box shadow where the blur-radius will be 1px.*/
+        box-shadow: 0px 0px 1px darkgray;
+        /*The background color of this element is “whitesmoke”*/
+        width: 82vw;
+        margin: 1vw auto;
+        background-color: whitesmoke;
+        padding: 20px;
+        
+    }
+    
+    body{
+        margin: 0px;
+        /*Main font 'Lato'*/
+        font-family: Lato, sans-serif;
+        /*Gradient background color*/
+        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+    }
+    
+    h1{
+        /*H1 elements will have a size of 4rem*/
+        font-size: 4rem;
+    }
+
+    h2{
+        /*H2 elements will have a size of 2.2rem*/
+        font-size: 2.2rem;
+        padding-top: 2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    p{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    
+    header{
+        /*The container will be 55vh tall*/
+        height: 55vh;
+        /*set a background image*/
+        background-image: url(assets/img/studentsbg.png);
+        /*The background image will be scaled*/
+        background-size: 960px 540px;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    div{
+        margin: 0 auto;
+    }
+
+    header > div{
+        /*The background colour of the div inside the header is #c5192d*/
+        background-color: #c5192d;
+        /*The div inside the header will be pushed down 4rem */
+        position: relative;
+        top: 4rem;
+        text-align: center;
+        color: white;
+        width: 75vw;
+        padding: 1rem 2.2rem;
+        margin: 0 auto;
+
+        
+    }
+
+    #intro-container {
+        display: relative;
+        padding: 1.5rem;
+        padding-right: 1.5rem;
+        margin-top: 7rem;
+        background-color:#c5192d;
+        z-index: 2;
+    }
+
+
+
+    li:first-child::before{
+        content: "\1F64C";
+        padding-right: 1rem;
+        padding-left: 1rem;
+        /* \1F3EB | \1F4DA */
+    }    
+    
+    li::before{
+        content: "\1F3EB";
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    li:last-child::before{
+        content: "\1F4DA";
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    
+
+    ul{
+        list-style-type: none;
+        padding-inline-start: 0px;
+    }
+    
+    img{
+        width: 95%;
+        height: 95%;
+        margin-top: 0.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img:nth-child(1){
+        transform: scaleY(-1);
+        margin-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    article:nth-child(2) img{
+        padding-bottom: 2.375856rem;
+
+    } 
+
+
+    article:nth-child(3) div{
+        border-top: 0.5px solid #c3cfe2;
+        transform: scaleY(-1);
+    }
+    article:nth-child(3){
+        transform: scaleY(-1); 
+    }   
+    
+    footer{
+        background-color: #c5192d;
+        padding: 1.5rem;
+        width: 80vw;
+        margin: 0 auto;
+        margin-top: 1.827284rem;
+    }
+    
+    footer > p{
+    color: white;
+    text-align: center;
+    }
+
+    a{
+        color: white;
+    }
+
+    a:visited{
+        color: lightgray;
+    }
+
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                     LINE SPLIT                                                                  */
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 600px) and (max-width: 960px) /* Skjermer på 600px-960px */
+{
+    /*Importerer Montserrat font fra mappen assets*/
+    @font-face {
+        font-family: Montserrat;
+        src: url(assets/fonts/Montserrat-Bold.ttf);
+        }
+    @font-face {
+        font-family: Lato;
+        src: url(assets/fonts/Lato-Regular.ttf);
+    }
+    
+    h1,h2,h3{
+        font-family: Montserrat, sans-serif;
+    }
+
+    p,li{
+        /*Default font size 16px*/
+        font-size: 16px;
+        max-width: 70ch;
+        /*The paragraph will never exceed 70ch wide and the distance 
+        between lines of text will be set to 1.5*/
+        line-height: 1.5;
+    }
+
+    main {    
+        /*Default content size*/
+        font-size: 1.2rem;
+        /*The box shadow’s color is “darkgrey”*/
+        /*It sets a box shadow where the blur-radius will be 1px.*/
+        box-shadow: 0px 0px 1px darkgray;
+        /*The background color of this element is “whitesmoke”*/
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 7%;
+        background-color: whitesmoke;
+        /*padding: 20px;*/   
+    }
+
+    body{
+        margin: 0px;
+        /*Main font 'Lato'*/
+        font-family: Lato, sans-serif;
+        /*Gradient background color*/
+        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+    }
+
+    h1{
+        /*H1 elements will have a size of 4rem*/
+        font-size: 4rem;
+    }
+
+    h2{
+        /*H2 elements will have a size of 2.2rem*/
+        font-size: 2.2rem;
+        padding-top: 2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    p{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    header{
+        /*The container will be 65vh tall*/
+        height: 65vh;
+        /*set a background image*/
+        background-image: url(assets/img/studentsbg.png);
+        /*The background image will be scaled*/
+        background-size: 960px 540px;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-attachment: fixed;
+        background-size: cover;
+        padding-top: 100px;
+    }
+
+    div{
+        margin: 0 auto;
+    }
+
+    header > div{
+        /*The background colour of the div inside the header is #c5192d*/
+        background-color: #c5192d;
+        /*The div inside the header will be pushed down 4rem */
+        position: relative;
+        top: 4rem;
+        text-align: center;
+        color: white;
+        width: 85%;
+       /* padding: 1rem 2.2rem;*/
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+
+    header > div > p,h1{
+        padding: 0.5rem 2rem;
+        height: 7rem;
+    }
+
+    #intro-container {
+        display: relative;
+        margin-top: 150px;
+        z-index: 2;
+        border-bottom: solid #c3cfe2 1px;
+    }
+
+    #intro-container > div{
+        display: inline-block;
+        width: 45%;
+    }
+
+    #intro-container > div:first-of-type {
+        display: inline-block;
+        background-color:#c5192d;
+        width: 45%;
+        margin-right: 5%;
+        padding: 10px;
+        padding-left: 2%;
+        padding-bottom: 50px;
+    }
+
+    li:first-child::before{
+        content: "\1F64C";
+        padding-right: 1rem;
+        padding-left: 1rem;
+        /* \1F3EB | \1F4DA */
+    }    
+
+    li::before{
+        content: "\1F3EB";
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    li:last-child::before{
+        content: "\1F4DA";
+        padding-right: 1rem;
+        padding-left: 1rem;
+        }
+
+
+    ul{
+        list-style-type: none;
+        padding-inline-start: 0px;
+        /*padding-right: 25px;*/
+    }
+
+    img{
+        width: 95%;
+        height: 95%;
+        margin-top: 0.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    img:nth-child(1){
+        transform: scaleY(-1);
+        margin-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    article:nth-child(2) > img{
+        display: inline-block;
+        max-width: 45%;
+        margin-left: 5%;
+        margin-right: 5px;
+        margin-top: 10%;
+        margin-bottom: 4rem;
+        height: 50%;
+    } 
+
+    article:nth-child(2) > div{
+        display: inline-block;
+        width: 45%;
+        padding-top: 5%;
+        padding-left: 3%;
+        vertical-align: top;
+    } 
+    article:nth-child(2) > div > h2{
+        padding-top: 0px;
+    }
+
+    article:nth-child(3) div{
+        /*border-bottom: 1px solid darkgray;*/
+        transform: scaleY(-1);
+        display: inline-block;
+        width: 45%;
+        padding-left: 1rem;
+    }
+
+    article:nth-child(3) > div > h2{
+        margin: 0;
+    }
+
+    article:nth-child(3) > img{
+        display: inline-block;
+        width: 45%;
+        margin: 2rem 0 0 1rem;
+    }
+
+    article:nth-child(3){
+        transform: scaleY(-1);
+        border-bottom: 1px solid #c3cfe2;
+        border-top: 1px solid #c3cfe2;
+    }   
+
+    article:nth-child(4) > div{
+        display: inline-block;
+        width: 45%;
+        margin-right: 6%;
+        vertical-align: top;
+        padding-left: 1rem;
+    }
+
+    article:nth-child(4) > div > h2 {
+        padding: 0px;
+        margin: 2rem 0 0 0;
+    }
+
+    article:nth-child(4) > div > p {
+        padding: 0;
+    }
+
+    article:nth-child(4) > img {
+        display: inline-block;
+        width: 45%;
+        margin: 2rem 0 4rem 0;
+    }
+
+    footer{
+        background-color: #c5192d;
+        /*padding: 1.5rem;*/
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 1.827284rem;
+    }
+
+    footer > p{
+        color: white;
+        padding: 1.5rem;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        text-align: center;
+    }
+
+    a{
+        color: white;
+    }
+
+    a:visited{
+        color: lightgray;
+    }
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                     LINE SPLIT                                                                  */
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 960px) /* Skjermer på 960px+ */
+{
+    /*Importerer Montserrat font fra mappen assets*/
+    @font-face {
+        font-family: Montserrat;
+        src: url(assets/fonts/Montserrat-Bold.ttf);
+        }
+    @font-face {
+        font-family: Lato;
+        src: url(assets/fonts/Lato-Regular.ttf);
+    }
+    
+    h1,h2,h3{
+        font-family: Montserrat, sans-serif;
+    }
+
+    p,li{
+        /*Default font size 24px*/
+        font-size: 24px;
+        max-width: 70ch;
+        /*The paragraph will never exceed 70ch wide and the distance 
+        between lines of text will be set to 1.5*/
+        line-height: 1.5;
+    }
+
+    main {    
+        /*Default content size*/
+        font-size: 24px;
+        /*The box shadow’s color is “darkgrey”*/
+        /*It sets a box shadow where the blur-radius will be 1px.*/
+        box-shadow: 0px 0px 1px darkgray;
+        /*The background color of this element is “whitesmoke”*/
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 7%;
+        background-color: whitesmoke;
+        /*padding: 20px;*/   
+    }
+
+    body{
+        margin: 0px;
+        /*Main font 'Lato'*/
+        font-family: Lato, sans-serif;
+        /*Gradient background color*/
+        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+    }
+
+    h1{
+        /*H1 elements will have a size of 4rem*/
+        font-size: 4rem;
+    }
+
+    h2{
+        /*H2 elements will have a size of 2.2rem*/
+        font-size: 2.2rem;
+        padding-top: 2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    p{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    header{
+        /*The container will be 65vh tall*/
+        height: 65vh;
+        /*set a background image*/
+        background-image: url(assets/img/studentsbg.png);
+        /*The background image will be scaled*/
+        background-size: 960px 540px;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-attachment: fixed;
+        background-size: cover;
+        padding-top: 100px;
+    }
+
+    div{
+        margin: 0 auto;
+    }
+
+    header > div{
+        /*The background colour of the div inside the header is #c5192d*/
+        background-color: #c5192d;
+        /*The div inside the header will be pushed down 4rem */
+        position: relative;
+        top: 4rem;
+        text-align: center;
+        color: white;
+        width: 70%;
+       /* padding: 1rem 2.2rem;*/
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+
+    header > div > p,h1{
+        padding: 0.5rem 2rem;
+        height: 7rem;
+    }
+
+    #intro-container {
+        position: relative;
+        padding: 0;
+        margin-top: 150px;
+        border-bottom: solid #c3cfe2 1px;
+    }
+
+    #intro-container > div:nth-child(2){
+        display: inline-block;
+        width: 45%;
+    }
+
+    #intro-container > div:first-of-type {
+        display: inline-block;
+        background-color:#c5192d;
+        width: 45%;
+        margin-right: 5%;
+        padding: 10px;
+        padding-left: 2%;
+        padding-bottom: 50px;
+    }
+
+    li:first-child::before{
+        content: "\1F64C";
+        padding-right: 1rem;
+        padding-left: 1rem;
+        /* \1F3EB | \1F4DA */
+    }    
+
+    li::before{
+        content: "\1F3EB";
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    li:last-child::before{
+        content: "\1F4DA";
+        padding-right: 1rem;
+        padding-left: 1rem;
+        }
+
+
+    ul{
+        list-style-type: none;
+        padding-inline-start: 0px;
+        /*padding-right: 25px;*/
+    }
+
+    img{
+        width: 95%;
+        height: 95%;
+        margin-top: 0.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    img:nth-child(1){
+        transform: scaleY(-1);
+        margin-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    article:nth-child(2) > img{
+        display: inline-block;
+        max-width: 45%;
+        margin-left: 5%;
+        margin-right: 5px;
+        margin-top: 10%;
+        margin-bottom: 4rem;
+        height: 50%;
+    } 
+
+    article:nth-child(2) > div{
+        display: inline-block;
+        width: 45%;
+        padding-top: 5%;
+        padding-left: 3%;
+        vertical-align: top;
+    } 
+    article:nth-child(2) > div > h2{
+        padding-top: 0px;
+    }
+
+    article:nth-child(3) div{
+        /*border-bottom: 1px solid darkgray;*/
+        transform: scaleY(-1);
+        display: inline-block;
+        width: 45%;
+        padding-left: 1rem;
+    }
+
+    article:nth-child(3) > div > h2{
+        margin: 0;
+    }
+
+    article:nth-child(3) > img{
+        display: inline-block;
+        width: 45%;
+        margin: 2rem 0 0 1rem;
+    }
+
+    article:nth-child(3){
+        transform: scaleY(-1);
+        border-bottom: 1px solid #c3cfe2;
+        border-top: 1px solid #c3cfe2;
+    }   
+
+    article:nth-child(4) > div{
+        display: inline-block;
+        width: 45%;
+        margin-right: 6%;
+        vertical-align: top;
+        padding-left: 1rem;
+    }
+
+    article:nth-child(4) > div > h2 {
+        padding: 0px;
+        margin: 2rem 0 0 0;
+    }
+
+    article:nth-child(4) > div > p {
+        padding: 0;
+    }
+
+    article:nth-child(4) > img {
+        display: inline-block;
+        width: 45%;
+        margin: 2rem 0 4rem 0;
+    }
+
+    footer{
+        background-color: #c5192d;
+        /*padding: 1.5rem;*/
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 1.827284rem;
+    }
+
+    footer > p{
+        color: white;
+        padding: 1.5rem;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        text-align: center;
+    }
+
+    a{
+        color: white;
+    }
+
+    a:visited{
+        color: lightgray;
+    }
+}
